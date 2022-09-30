@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"href="css/bootstrap.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        .div1{
+            background-color:antiquewhite;
+        }
+        .img{
+           
+             width: 5%;
+             height:5%;
+        }
+        .ml-auto{
+          margin-left: auto !important;
+        }
+        .ml-4{
+          margin-left: 30px !important;
+        }
+        .para{
+          width: 420px;
+          margin: auto ;
+          padding: 15px;
+        }
+        .logo{
+          border-radius: 50% ;
+        }
+        .portimg{
+          width: 400px;
+          height: 230px;
+          border-radius: 20px;
+}
+.scroll{
+  border: 1px solid black;
+  width: 200;
+  height: 500;
+  overflow: scroll;
+}
+.scrollnw{
+  border: 1px solid black;
+  width: 500px;
+  height: 600px;
+  overflow: scroll;
+}
+
+    </style>
+</head>
+<body>
+   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+  <div class="container-fluid" style="background-color:dimgrey;padding: 30px;">
+    <img style="width:130px;height: 50px; border-radius: 15%;" class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNSdCOVtbw7DA9xbHBqm4CkCvBof-zpGPug&usqp=CAU" width="50%" height="10%" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse o" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0 ml-auto ">
+        <li class="nav-item ml-4">
+          <a class="nav-link active" aria-current="page" href="#" style="font-family: 'Times New Roman', Times, serif;"><b>Home</b></a>
+        </li>
+        <li class="nav-item ml-4">
+          <a class="nav-link" href="#" style="font-family:'Times New Roman', Times, serif ;"><b>About</b></a>
+        </li>
+        <li class="nav-item ml-4 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Times New Roman', Times, serif;"><b>
+            Our Work
+          </b>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">service1</a></li>
+            <li><a class="dropdown-item" href="#">service2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">service3</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<div>
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2"></a>
+    </li>
+    <li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3"></a>
+    </li>
+    <li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading4"></a>
+    </li>
+        <li><a class="dropdown-item" href="#scrollspyHeading3"></a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4"></a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5"></a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <center>
+      <div class="scrollnw"onscroll="myFunction()">
+        <h4 id="scrollspyHeading1"><b><center>SHOE'S WORLD</b></center></h4>
+        <br>
+        <img class="portimg" src="task/woman-tying-shoelaces.jpg"
+        <br>
+        <h4 id="scrollspyHeading2"><b><center>KIDS COLLECTION</center></b></h4>
+        <br>
+        <img class="portimg" src="task/beautiful-girl-baby-fashion-child.jpg"
+        <br>
+        <h4 id="scrollspyHeading3"><b>MENS WORLD</b></h4>
+        <br>
+   <img class="portimg" src="task/istockphoto-685168074-170667a.jpg">
+    <br>
+    <h4 id="scrollspyHeading4"><b>NEW ARRIVALS</b></h4>
+    <br>
+      <img class="portimg" src="task/mens shoe.jfif"  height="20%">
+      <br><br>
+      </div>
+        
+        <p><span id="demo"></span> </p>
+        
+        <script>
+        let x = 0;
+        function myFunction() {
+          document.getElementById("demo").innerHTML = x += 1;
+        }
+        </script>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="task/shop.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><B><center>OPENING SHORTLY</center></B></h5>
+
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"></small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size:80px;">
+  <center>POP UP ME</center>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          <img src="https://img.freepik.com/premium-photo/colorful-sport-shoes-green_151013-4554.jpg?size=626&ext=jpg&ga=GA1.2.2098367472.1654151380" width="100%" height="100%"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-primary">NEW ORDER</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    
+<div class="scroll"onscroll="myFunction()">
+  <br>
+  <center><b>NEW ARRIVALS
+  <BR>
+    Lets buy it on 50% discount!!!!!!!
+  </center></b>
+  <img src="task/7d1716ea0e40f31cf7c83bf7c60f77e4.png" height="50%"width="100%">
+  <br><br>
+  <center><b>
+  The shoes world introduce best collection ever!!!Hurry up...
+</center></b><br>
+  <img src="task/252509.jpg" height="100%x"width="100%">
+</div>
+  
+  <p><span id="demo"></span> </p>
+  
+  <script>
+  let x = 0;
+  function myFunction() {
+    document.getElementById("demo").innerHTML = x += 1;
+  }
+  </script>
+  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> 
+</body>
+</html>
